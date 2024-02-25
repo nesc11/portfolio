@@ -1,0 +1,16 @@
+---
+import SectionLayout from "../layouts/SectionLayout.astro";
+import Linkedin from "../icons/Linkedin.astro";
+const { pageTitle, customText } = Astro.props;
+---
+
+<SectionLayout sectionText="contact-section">
+  <div>
+    <p>{customText}</p>
+    <h1>{pageTitle}</h1>
+  </div>
+  <div class="email-container">
+    <span><Linkedin /><a href="#">salzarnestor@gmail.com</a></span>
+    <span><Linkedin /><a href="#">LinkedIn</a></span>
+  </div>
+</SectionLayout>

@@ -1,0 +1,34 @@
+---
+import SectionLayout from "../layouts/SectionLayout.astro";
+import ExperienceCommonContainer from "./ExperienceCommonContainer.astro";
+const { pageTitle, customText } = Astro.props;
+const frontendTopics = [
+  { name: "HTML", level: "Experienced" },
+  { name: "HTML", level: "Experienced" },
+  { name: "HTML", level: "Experienced" },
+  { name: "HTML", level: "Experienced" },
+  { name: "HTML", level: "Experienced" },
+];
+const backendTopics = [
+  { name: "HTML", level: "Experienced" },
+  { name: "HTML", level: "Experienced" },
+  { name: "HTML", level: "Experienced" },
+  { name: "HTML", level: "Experienced" },
+  { name: "HTML", level: "Experienced" },
+];
+---
+
+<SectionLayout sectionText="experience-section">
+  <div>
+    <p>{customText}</p>
+    <h1>{pageTitle}</h1>
+  </div>
+  <ExperienceCommonContainer
+    title="frontend development"
+    topics={frontendTopics}
+  />
+  <ExperienceCommonContainer
+    title="backend development"
+    topics={backendTopics}
+  />
+</SectionLayout>

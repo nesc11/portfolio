@@ -1,0 +1,13 @@
+---
+const { project } = Astro.props;
+const { title, githubUrl, liveUrl, poster } = project;
+---
+
+<div class="projects-common-container">
+  <img src={poster.url} alt={poster.description} />
+  <div>
+    <h3>{title}</h3>
+    <a href={githubUrl}>github</a>
+    <a href={liveUrl}>live demo</a>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+---
+import Github from "../icons/Github.astro";
+const { classText, title, paragraph } = Astro.props;
+---
+
+<div class={classText}>
+  <Github />
+  <h3>{title}</h3>
+  <p>{paragraph}</p>
+</div>

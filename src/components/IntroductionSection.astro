@@ -1,0 +1,25 @@
+---
+import SectionLayout from "../layouts/SectionLayout.astro";
+import Linkedin from "../icons/Linkedin.astro";
+import Github from "../icons/Github.astro";
+const { pageTitle, customText } = Astro.props;
+---
+
+<SectionLayout sectionText="introduction-section">
+  <div class="profile-img-container">
+    <img src="https://unavatar.io/github/nesc11" alt="nestor photo" />
+  </div>
+  <div class="info-container">
+    <p>{customText}</p>
+    <h1>{pageTitle}</h1>
+    <h2>fronted developer</h2>
+    <div class="cv-container">
+      <button id="cv-btn" class="btn cv-btn">Download CV</button>
+      <a href="#contact">Contact Info</a>
+    </div>
+    <div class="social-links-container">
+      <a href=""><Linkedin /></a>
+      <a href=""><Github /></a>
+    </div>
+  </div>
+</SectionLayout>
