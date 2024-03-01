@@ -1,34 +1,16 @@
 ---
-import Navigation from './Navigation.astro'
-import Hamburger from './Hamburger.astro'
+import Hamburger from "./Hamburger.astro";
+import Navigation from "./Navigation.astro";
 ---
-<header>
-    <!-- <img src="https://unavatar.io/github/nesc11" alt="nestor photo"> -->
-    <nav>
-        <span class="logo">Nestor</span>
-        <Hamburger />
-        <Navigation />
-    </nav>
-</header>
 
-<style>
-    header {
-        width: 100%;
-        background-color: rgb(34, 37, 49);
-    }
-    header nav {
-        width: 90%;
-        height: 17vh;
-        /* max-width: 80ch; */
-        max-width: 800px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    /* header img {
-        border-radius: 50%;
-        height: 30px;
-        width: 30px;
-    } */
-</style>
+<header>
+  <div class="wrapper">
+    <div class="layout-flex-header">
+      <a href="/">Nestor</a>
+      <nav>
+        <Hamburger />
+        <Navigation device="mobile" />
+      </nav>
+    </div>
+  </div>
+</header>

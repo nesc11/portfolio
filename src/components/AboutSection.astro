@@ -7,18 +7,20 @@ const { pageTitle, customText } = Astro.props;
 <SectionLayout sectionText="about-section">
   <div>
     <p>{customText}</p>
-    <h1>{pageTitle}</h1>
+    <h2>{pageTitle}</h2>
   </div>
-  <AboutCommonContainer
-    classText="experience-container"
-    title="Experience"
-    paragraph="2+ years fronted development"
-  />
-  <AboutCommonContainer
-    classText="education-container"
-    title="Education"
-    paragraph="2+ years fronted development"
-  />
+  <div class="experience-education">
+    <AboutCommonContainer
+      classText="experience-container"
+      title="Experience"
+      paragraph="2+ years fronted development"
+    />
+    <AboutCommonContainer
+      classText="education-container"
+      title="Education"
+      paragraph="2+ years fronted development"
+    />
+  </div>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
     voluptatibus quia necessitatibus, dolore quas nisi, alias

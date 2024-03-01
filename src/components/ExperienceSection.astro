@@ -21,14 +21,16 @@ const backendTopics = [
 <SectionLayout sectionText="experience-section">
   <div>
     <p>{customText}</p>
-    <h1>{pageTitle}</h1>
+    <h2>{pageTitle}</h2>
   </div>
-  <ExperienceCommonContainer
-    title="frontend development"
-    topics={frontendTopics}
-  />
-  <ExperienceCommonContainer
-    title="backend development"
-    topics={backendTopics}
-  />
+  <div class="experience">
+    <ExperienceCommonContainer
+      title="frontend development"
+      topics={frontendTopics}
+    />
+    <ExperienceCommonContainer
+      title="backend development"
+      topics={backendTopics}
+    />
+  </div>
 </SectionLayout>

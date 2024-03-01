@@ -4,15 +4,15 @@ import Github from "../icons/Github.astro";
 ---
 
 <div class="experience-common-container">
-  <h2>{title}</h2>
+  <h3>{title}</h3>
   <ul>
     {
       topics.map((topic) => (
         <li>
           <Github />
           <div>
-            <h3>{topic.name}</h3>
-            <p>{topic.level}</p>
+            <span class="experience-topic-name">{topic.name}</span>
+            <span>{topic.level}</span>
           </div>
         </li>
       ))

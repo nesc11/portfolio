@@ -36,7 +36,9 @@ const projects = [
 <SectionLayout sectionText="projects-section">
   <div>
     <p>{customText}</p>
-    <h1>{pageTitle}</h1>
+    <h2>{pageTitle}</h2>
   </div>
-  {projects.map((project) => <ProjectsCommonContainer project={project} />)}
+  <div class="projects-container">
+    {projects.map((project) => <ProjectsCommonContainer project={project} />)}
+  </div>
 </SectionLayout>

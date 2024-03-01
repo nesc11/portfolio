@@ -9,10 +9,12 @@ import ContactSection from "../components/ContactSection.astro";
 
 <BaseLayout>
   <main>
-    <IntroductionSection pageTitle="Nestor" customText="Hello, I'm" />
-    <AboutSection pageTitle="About Me" customText="Get To Know More" />
-    <ExperienceSection pageTitle="Experience" customText="Explore My" />
-    <ProjectsSection pageTitle="Projects" customText="Browse My Recent" />
-    <ContactSection pageTitle="Contact Me" customText="Get in Touch" />
+    <div class="wrapper">
+      <IntroductionSection pageTitle="Nestor" customText="Hello, I'm" />
+      <AboutSection pageTitle="About Me" customText="Get To Know More" />
+      <ExperienceSection pageTitle="Experience" customText="Explore My" />
+      <ProjectsSection pageTitle="Projects" customText="Browse My Recent" />
+      <ContactSection pageTitle="Contact Me" customText="Get in Touch" />
+    </div>
   </main>
 </BaseLayout>
